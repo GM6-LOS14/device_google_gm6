@@ -16,7 +16,7 @@
 
 # lunch command for Heart
 for var in eng userdebug; do
-  add_lunch_combo lineage_Heart-$var
+  add_lunch_combo lineage_gm6-$var
 done
 
 # Auto Patches
