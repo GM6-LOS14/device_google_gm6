@@ -14,16 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/nokia/Heart
+LOCAL_PATH := device/google/gm6
 
 # inherit from the proprietary version
--include vendor/nokia/Heart/BoardConfigVendor.mk
+-include vendor/google/gm6/BoardConfigVendor.mk
 
 # Header
-TARGET_SPECIFIC_HEADER_PATH := device/nokia/Heart/include
+TARGET_SPECIFIC_HEADER_PATH := device/google/gm6/include
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6737m
+TARGET_BOARD_PLATFORM := mt6737t
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_FACTORYIMAGE := true
 
@@ -77,7 +77,7 @@ TARGET_KMODULES := true
 BOARD_CUSTOM_BOOTIMG := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := Nokia,Nokia_3,Nokia-3,Heart,NE1
+TARGET_OTA_ASSERT_DEVICE := GM6,gm6_s_sprout,gm6_d_sprout
 
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
@@ -94,7 +94,7 @@ WITH_DEXPREOPT_BOOT_IMG_ONLY := true
 DONT_DEXPREOPT_PREBUILTS := true
 
 # Display
-BOARD_EGL_CFG := /vendor/nokia/Heart/vendor/lib/egl/egl.cfg
+BOARD_EGL_CFG := /vendor/toogle/gm6/vendor/lib/egl/egl.cfg
 USE_OPENGL_RENDERER:=true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
@@ -134,7 +134,7 @@ TARGET_OMX_LEGACY_RESCALING := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/nokia/Heart/ril/
+BOARD_RIL_CLASS := ../../../device/google/gm6/ril/
 
 # GPS
 BOARD_GPS_LIBRARIES :=true
@@ -170,10 +170,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote64_32
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS := \
-       device/nokia/Heart/sepolicy
+       device/google/gm6/sepolicy
 
 # Seccomp filter
-BOARD_SECCOMP_POLICY += device/nokia/Heart/seccomp
+BOARD_SECCOMP_POLICY += device/google/gm6/seccomp
 
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
@@ -183,12 +183,12 @@ BOARD_HAVE_BLUETOOTH := true
 #BOARD_HAVE_BLUETOOTH_MTK := true
 #BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
 #BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED := 0
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/nokia/Heart/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/google/gm6/bluetooth
 
 TARGET_LDPRELOAD += mtk_symbols.so
 
 # CWM
-TARGET_RECOVERY_FSTAB := device/nokia/Heart/rootdir/root/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/google/gm6/rootdir/root/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP stuff
@@ -226,9 +226,10 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 
 # System Properies
-TARGET_SYSTEM_PROP := device/nokia/Heart/system.prop
+TARGET_SYSTEM_PROP := device/google/gm6/system.prop
 
 # Hack for build { prebuilt kernel sake}
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 ###2K18 - @izaqkull
+#kutlay1653
