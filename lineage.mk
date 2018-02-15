@@ -17,13 +17,13 @@
 ## Specify phone tech before including full_phone
 
 # Release name
-PRODUCT_RELEASE_NAME := Heart
+PRODUCT_RELEASE_NAME := GM6
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/nokia/Heart/device_Heart.mk)
+$(call inherit-product, device/google/gm6/device_Heart.mk)
 
 # Screen Config
 TARGET_SCREEN_HEIGHT := 1280
@@ -31,11 +31,11 @@ TARGET_SCREEN_WIDTH := 720
 DEVICE_RESOLUTION := 720x1280
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := Heart
-PRODUCT_NAME := lineage_Heart
-PRODUCT_BRAND := Nokia
-PRODUCT_MODEL := Nokia 3
-PRODUCT_MANUFACTURER := HMD Global
+PRODUCT_DEVICE := GM6
+PRODUCT_NAME := lineage_gm6
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := GM6
+PRODUCT_MANUFACTURER := General Mobile
 
 # Google Client ID
 PRODUCT_GMS_CLIENTID_BASE := android-hmd-rev2
