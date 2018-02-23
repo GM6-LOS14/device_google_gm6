@@ -28,11 +28,12 @@ Camera  | Main 8MP / Front 5MP, autofocus, LED flash
 
 * Device Tree
   -------------
-```git clone https://github.com/nokia-mtk/device_google_gm6 -b los-14.1 device/google/gm6 ```
+```git clone https://github.com/GM6-LOS14/device_google_gm6 -b los-14.1 device/google/gm6 ```
 
 * Vendor 
   --------
-```git clone https://github.com/nokia-mtk/vendor_google_gm6 vendor/google/gm6 ```
+```git clone https://github.com/GM6-LOS14/vendor_google_gm6 vendor/google/gm6 ```
 
-(c)2K18 - @izaqkull
-
+(c)2K18 -
+@izaqkull
+@kutlay1653
