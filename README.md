@@ -1,11 +1,11 @@
 Device Tree for General Mobile GM6
 ===========================================
-NOT READY YET
+Untested now
 ===========================================
 A mid-range smartphone from General Mobile.
 
 - The GM6
-- codename : gm_6_s_sprout
+- codename : gm6_s_sprout
 
 ![gm6](/assert/gm6.jpg "gm6")
 
@@ -32,7 +32,7 @@ Camera  | Main 8MP / Front 5MP, autofocus, LED flash
 
 * Vendor 
   --------
-```git clone https://github.com/GM6-LOS14/vendor_google_gm6 vendor/google/gm6 ```
+```git clone https://github.com/GM6-LOS14/vendor_google_gm6 -b los-14.1 vendor/google/gm6 ```
 
 (c)2K18 -
 @izaqkull
