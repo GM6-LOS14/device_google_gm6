@@ -21,21 +21,21 @@ done
 
 # Auto Patches
 cd frameworks/av
-git apply -v ../../device/google/gm6/mtk-patches/frameworks_av.patch
+git apply -v ../../device/google/gm6/nk3-patches/frameworks_av.patch
 cd ../..
 cd frameworks/base
-git apply -v ../../device/google/gm6/mtk-patches/frameworks_base.patch
+git apply -v ../../device/google/gm6/nk3-patches/frameworks_base.patch
 cd ../..
 cd system/netd
-git apply -v ../../device/google/gm6/mtk-patches/system_netd.patch
+git apply -v ../../device/google/gm6/nk3-patches/system_netd.patch
 cd ../..
 cd system/core
-git apply -v ../../device/google/gm6/mtk-patches/system_core.patch
+git apply -v ../../device/google/gm6/nk3-patches/system_core.patch
 cd ../..
 cd frameworks/native
-git apply -v ../../device/google/gm6/mtk-patches/frameworks_native.patch
+git apply -v ../../device/google/gm6/nk3-patches/frameworks_native.patch
 cd ../..
 
-echo " PATCH NOKIA-3 (Heart) DONE !!!"
+echo " PATCH DONE !!!"
 echo ""
 echo ""
