@@ -28,6 +28,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_FACTORYIMAGE := true
 
 MTK_K64_SUPPORT = yes
+BLOCK_BASED_OTA := false
 
 # Architecture
 TARGET_ARCH := arm64
