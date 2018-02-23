@@ -126,7 +126,7 @@ TARGET_PROVIDES_INIT_RC := true
 
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS := device/nokia/Heart/cmhw
+BOARD_HARDWARE_CLASS := device/google/gm6/cmhw
 
 # Fix video autoscaling on old OMX decoders
 TARGET_OMX_LEGACY_RESCALING := true
@@ -201,7 +201,7 @@ TARGET_SCREEN_WIDTH := 720
 TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_NO_REBOOT_BOOTLOADER := true
-TARGET_RECOVERY_FSTAB := device/nokia/Heart/rootdir/root/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/google/gm6/rootdir/root/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
